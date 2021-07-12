@@ -1,13 +1,176 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(214, 214, 214);
+}
+
+header{
+  margin-bottom: 4rem;
+}
+
+header h2{
+  font-size: 2.5rem;
+}
+
+.underline{
+  width: 5rem;
+  height: 0.25rem;
+  margin-top: 0.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(0, 134, 134);
+}
+
+.section-center{
+  width: 70%;
+  display: flex;
+  margin: 0 2rem;
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 2px 20px black;
+  padding: 2rem ;
+}
+
+.btn-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn{
+  margin-bottom: 1rem;
+  padding: 0.3rem 2rem;
+  font-size: 1rem;
+  color: rgb(255, 254, 254);
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: rgb(0, 129, 129);
+  border: none;
+  transition: all 0.2s linear;
+}
+
+.btn:hover{
+  background: transparent;
+  border: 3px solid rgb(3, 136, 136);
+  color: rgb(1, 114, 114);
+}
+
+
+.single-section{
+  margin-left: 3rem;
+}
+
+.single-section h3{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.single-section h4{
+  margin-bottom: 0.5rem;
+  background: rgb(170, 170, 170);
+  display: inline-block;
+  padding: 0.3rem;
+  color: rgb(3, 49, 49);
+  letter-spacing: 0.1rem;
+}
+
+.date{
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.15rem;
+  font-style: italic;
+  color: rgb(85, 84, 84);
+  font-weight: bold;
+}
+
+.job-info{
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.job-info p{
+  margin-left: 1rem;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.icon{
+  font-size: 1.5rem;
+  color: rgb(0, 94, 94);
+}
+
+.more-info{
+  margin: 3rem 0 2rem 0;
+  padding: 0.5rem 3rem;
+  background: rgb(1, 119, 119);
+  border: none;
+  color: white;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s linear;
+  
+}
+
+.more-info:hover{
+  background: transparent;
+  border: 3px solid rgb(3, 136, 136);
+  color: rgb(1, 114, 114);
+}
+
+.active-btn{
+  background: transparent;
+  border-left: 3px solid rgb(0, 117, 117);
+  color: rgb(1, 107, 107);
+}
+
+@media only screen and (max-width: 937px){
+  .section-center{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 496px){
+  .section-center{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .single-section{
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .active-btn{
+    border-right: 3px solid rgb(1, 146, 146);
+  }
+}
+
+.domain{
+  margin: 0.5rem 0;
+  text-align: center;
+  color: rgb(1, 97, 97);
+  font-weight: bold;
+  font-style: 1rem;
+}
+
+.domain a{
+  text-decoration: none;
+  color: rgb(1, 97, 97);
+  font-weight: bold;
+  font-style: 1rem;
+}
+
+.domain a:hover{
+  color: rgb(0, 0, 0);
 }
